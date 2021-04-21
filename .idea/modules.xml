@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/P3-Use-Case-Model-Relationship-Building.iml" filepath="$PROJECT_DIR$/.idea/P3-Use-Case-Model-Relationship-Building.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/push_baseline_to_heroku.iml" filepath="$PROJECT_DIR$/.idea/modules/push_baseline_to_heroku.iml" />
     </modules>
   </component>
 </project>
