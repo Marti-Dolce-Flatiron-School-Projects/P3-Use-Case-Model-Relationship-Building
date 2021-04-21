@@ -1,49 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Ruby Getting Started on Heroku</title>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
-  <%= csrf_meta_tags %>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Surjith S M">
+  <meta name="description" content="#">
+  <meta name="keywords" content="#">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="#">
+  <!-- Page Title -->
+  <title>Listed</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <!-- Themify Icon -->
+  <link rel="stylesheet" href="css/style.scss">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Hover Effects -->
+  <link href="css/set1.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-      </li>
-      <li>
-        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-          </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<!--============================= HEADER =============================-->
+<%= render 'layouts/header' %>
+<!--// Log In & Signup -->
+<!--//END HEADER -->
+<!--============================= HERO =============================-->
+<%= render 'layouts/hero' %>
+<!--//END HERO -->
+<!--============================= POPULAR =============================-->
+<%= render 'layouts/popular' %>
+<!--//END POPULAR -->
 
+<!--============================= FEATURED =============================-->
+<%= render 'layouts/featured' %>
+<!--//END FEATURED -->
+
+<!--============================= DETAILS =============================-->
+<%= render 'layouts/details' %>
+<!--//END DETAILS -->
+
+<!--============================= FAQ =============================-->
+<%= render 'layouts/faq' %>
+<!--//END FAQ -->
+
+
+<!--============================= YIELD =============================-->
 <%= yield %>
+<!--//END YIELD -->
 
+<!--============================= FOOTER =============================-->
+<%= render 'layouts/footer' %>
+<!--//END FOOTER -->
+
+</body>
 </body>
 </html>
