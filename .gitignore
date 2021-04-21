@@ -18,3 +18,4 @@
 # Ignore ruby-version
 /.ruby-version
 /.idea/*
+/Gemfile.lock
