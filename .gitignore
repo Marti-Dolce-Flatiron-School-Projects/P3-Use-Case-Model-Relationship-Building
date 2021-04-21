@@ -20,3 +20,6 @@
 /.idea/*
 /.idea/
 /test/
+.idea/rails-user-onboarding-app.iml
+config/database.yml
+Gemfile.lock
