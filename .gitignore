@@ -18,6 +18,9 @@
 # Ignore ruby-version
 /.ruby-version
 /.idea/*
+
+/Gemfile.lock
+
 /.idea/
 /test/
 .idea/rails-user-onboarding-app.iml
@@ -26,3 +29,4 @@ Gemfile.lock
 Gemfile.lock
 Onboarding Workflow
 package.json
+
