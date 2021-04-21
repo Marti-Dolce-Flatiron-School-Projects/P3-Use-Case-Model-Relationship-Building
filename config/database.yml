@@ -25,7 +25,7 @@ development:
   <<: *default
   # database: rails-onboarding-app_development
   database: rails-onboarding-app_development
-  username: postgres
+  username: mj163
   password: palo5non
 
   # The specified database role being used to connect to postgres.
@@ -61,7 +61,7 @@ development:
 test:
   <<: *default
   database: rails-onboarding-app_test
-  username: postgres
+  username: mj163
   password: palo5non
 
 # As with config/secrets.yml, you never want to store sensitive information,
