@@ -792,15 +792,31 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1618983647</StartupTime>
+      <StartupTime>1619105058</StartupTime>
     </root>
-    <database id="2" parent="1" name="postgres">
+    <database id="2" parent="1" name="delicate-silence-9230_development">
+      <ObjectId>24661</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="delicate-silence-9230_test">
+      <ObjectId>24662</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="microposts_development">
+      <ObjectId>32768</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="microposts_test">
+      <ObjectId>32769</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="postgres">
       <ObjectId>13442</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
     </database>
-    <database id="3" parent="1" name="rails-onboarding-app_development">
-      <ObjectId>24576</ObjectId>
+    <database id="7" parent="1" name="rails-onboarding-app_development">
+      <ObjectId>32946</ObjectId>
       <Grants>11||10|C|G
 11||-9223372036854775808|U|G
 11||10|U|G
@@ -812,51 +828,51 @@ false Zulu
 13158||-9223372036854775808|U|G
 13158||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>510</IntrospectionStateNumber>
+      <IntrospectionStateNumber>636</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|24594|24596|1
+      <Relations>sequence|table|32948|32950|1
 </Relations>
     </database>
-    <database id="4" parent="1" name="rails-onboarding-app_test">
-      <ObjectId>24577</ObjectId>
+    <database id="8" parent="1" name="rails-onboarding-app_test">
+      <ObjectId>32947</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <database id="5" parent="1" name="rails-user-onboarding-app_development">
+    <database id="9" parent="1" name="rails-user-onboarding-app_development">
       <ObjectId>16384</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <database id="6" parent="1" name="rails-user-onboarding-app_test">
+    <database id="10" parent="1" name="rails-user-onboarding-app_test">
       <ObjectId>16385</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <role id="7" parent="1" name="pg_execute_server_program">
+    <role id="11" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
     </role>
-    <role id="8" parent="1" name="pg_monitor">
+    <role id="12" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
     </role>
-    <role id="9" parent="1" name="pg_read_all_settings">
+    <role id="13" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_read_all_stats">
+    <role id="14" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_read_server_files">
+    <role id="15" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_signal_backend">
+    <role id="16" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_stat_scan_tables">
+    <role id="17" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="14" parent="1" name="pg_write_server_files">
+    <role id="18" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="15" parent="1" name="postgres">
+    <role id="19" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
@@ -865,36 +881,36 @@ false Zulu
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
-    <tablespace id="16" parent="1" name="pg_default">
+    <tablespace id="20" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
     </tablespace>
-    <tablespace id="17" parent="1" name="pg_global">
+    <tablespace id="21" parent="1" name="pg_global">
       <ObjectId>1664</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
     </tablespace>
-    <schema id="18" parent="3" name="information_schema">
+    <schema id="22" parent="7" name="information_schema">
       <ObjectId>13158</ObjectId>
       <StateNumber>292</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="19" parent="3" name="pg_catalog">
+    <schema id="23" parent="7" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>285</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="20" parent="3" name="public">
+    <schema id="24" parent="7" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <StateNumber>286</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>511</IntrospectionStateNumber>
+      <IntrospectionStateNumber>637</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
-    <extension id="21" parent="3" name="plpgsql">
+    <extension id="25" parent="7" name="plpgsql">
       <ObjectId>13428</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>438</StateNumber>
@@ -902,21 +918,21 @@ false Zulu
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <language id="22" parent="3" name="c">
+    <language id="26" parent="7" name="c">
       <ObjectId>13</ObjectId>
       <Comment>dynamically-loaded C functions</Comment>
       <StateNumber>1</StateNumber>
       <ValidatorName>fmgr_c_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <language id="23" parent="3" name="internal">
+    <language id="27" parent="7" name="internal">
       <ObjectId>12</ObjectId>
       <Comment>built-in functions</Comment>
       <StateNumber>1</StateNumber>
       <ValidatorName>fmgr_internal_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <language id="24" parent="3" name="plpgsql">
+    <language id="28" parent="7" name="plpgsql">
       <ObjectId>13432</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>438</StateNumber>
@@ -928,7 +944,7 @@ false Zulu
       <ValidatorName>plpgsql_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <language id="25" parent="3" name="sql">
+    <language id="29" parent="7" name="sql">
       <ObjectId>14</ObjectId>
       <Comment>SQL-language functions</Comment>
       <StateNumber>1</StateNumber>
@@ -936,14 +952,14 @@ false Zulu
       <ValidatorName>fmgr_sql_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <access-method id="26" parent="3" name="heap">
+    <access-method id="30" parent="7" name="heap">
       <ObjectId>2</ObjectId>
       <Comment>heap table access method</Comment>
       <StateNumber>1</StateNumber>
       <Handler>pg_catalog.heap_tableam_handler</Handler>
       <HandlerId>3</HandlerId>
     </access-method>
-    <access-method id="27" parent="3" name="btree">
+    <access-method id="31" parent="7" name="btree">
       <ObjectId>403</ObjectId>
       <Comment>b-tree index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -951,7 +967,7 @@ false Zulu
       <HandlerId>330</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="28" parent="3" name="hash">
+    <access-method id="32" parent="7" name="hash">
       <ObjectId>405</ObjectId>
       <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -959,7 +975,7 @@ false Zulu
       <HandlerId>331</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="29" parent="3" name="gist">
+    <access-method id="33" parent="7" name="gist">
       <ObjectId>783</ObjectId>
       <Comment>GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -967,7 +983,7 @@ false Zulu
       <HandlerId>332</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="30" parent="3" name="gin">
+    <access-method id="34" parent="7" name="gin">
       <ObjectId>2742</ObjectId>
       <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -975,7 +991,7 @@ false Zulu
       <HandlerId>333</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="31" parent="3" name="spgist">
+    <access-method id="35" parent="7" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -983,7 +999,7 @@ false Zulu
       <HandlerId>334</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="32" parent="3" name="brin">
+    <access-method id="36" parent="7" name="brin">
       <ObjectId>3580</ObjectId>
       <Comment>block range index (BRIN) access method</Comment>
       <StateNumber>1</StateNumber>
@@ -991,57 +1007,57 @@ false Zulu
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <sequence id="33" parent="20" name="widgets_id_seq">
-      <ObjectId>24594</ObjectId>
+    <sequence id="37" parent="24" name="users_id_seq">
+      <ObjectId>32948</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>496</StateNumber>
+      <StateNumber>614</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="34" parent="20" name="ar_internal_metadata">
-      <ObjectId>24586</ObjectId>
+    <table id="38" parent="24" name="ar_internal_metadata">
+      <ObjectId>32978</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>495</StateNumber>
+      <StateNumber>618</StateNumber>
     </table>
-    <table id="35" parent="20" name="schema_migrations">
-      <ObjectId>24578</ObjectId>
+    <table id="39" parent="24" name="schema_migrations">
+      <ObjectId>32970</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>494</StateNumber>
+      <StateNumber>616</StateNumber>
     </table>
-    <table id="36" parent="20" name="widgets">
-      <ObjectId>24596</ObjectId>
+    <table id="40" parent="24" name="users">
+      <ObjectId>32950</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>496</StateNumber>
+      <StateNumber>614</StateNumber>
     </table>
-    <column id="37" parent="34" name="key">
+    <column id="41" parent="38" name="key">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>495</StateNumber>
+      <StateNumber>618</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="38" parent="34" name="value">
+    <column id="42" parent="38" name="value">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>495</StateNumber>
+      <StateNumber>618</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="34" name="created_at">
+    <column id="43" parent="38" name="created_at">
       <Position>3</Position>
       <DataType>timestamp(6)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>495</StateNumber>
+      <StateNumber>618</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="40" parent="34" name="updated_at">
+    <column id="44" parent="38" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp(6)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>495</StateNumber>
+      <StateNumber>618</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="41" parent="34" name="ar_internal_metadata_pkey">
-      <ObjectId>24592</ObjectId>
-      <StateNumber>495</StateNumber>
+    <index id="45" parent="38" name="ar_internal_metadata_pkey">
+      <ObjectId>32984</ObjectId>
+      <StateNumber>618</StateNumber>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1050,23 +1066,23 @@ false Zulu
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="42" parent="34" name="ar_internal_metadata_pkey">
-      <ObjectId>24593</ObjectId>
-      <StateNumber>495</StateNumber>
+    <key id="46" parent="38" name="ar_internal_metadata_pkey">
+      <ObjectId>32985</ObjectId>
+      <StateNumber>618</StateNumber>
       <ColNames>key</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
     </key>
-    <column id="43" parent="35" name="version">
+    <column id="47" parent="39" name="version">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>494</StateNumber>
+      <StateNumber>616</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="44" parent="35" name="schema_migrations_pkey">
-      <ObjectId>24584</ObjectId>
-      <StateNumber>494</StateNumber>
+    <index id="48" parent="39" name="schema_migrations_pkey">
+      <ObjectId>32976</ObjectId>
+      <StateNumber>616</StateNumber>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1075,56 +1091,68 @@ false Zulu
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="45" parent="35" name="schema_migrations_pkey">
-      <ObjectId>24585</ObjectId>
-      <StateNumber>494</StateNumber>
+    <key id="49" parent="39" name="schema_migrations_pkey">
+      <ObjectId>32977</ObjectId>
+      <StateNumber>616</StateNumber>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
     </key>
-    <column id="46" parent="36" name="id">
+    <column id="50" parent="40" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>496</StateNumber>
-      <DefaultExpression>nextval(&apos;widgets_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>614</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="47" parent="36" name="name">
+    <column id="51" parent="40" name="fname">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>496</StateNumber>
+      <StateNumber>614</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="48" parent="36" name="description">
+    <column id="52" parent="40" name="lname">
       <Position>3</Position>
-      <DataType>text|0s</DataType>
-      <StateNumber>496</StateNumber>
-      <TypeId>25</TypeId>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>614</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <column id="49" parent="36" name="stock">
+    <column id="53" parent="40" name="username">
       <Position>4</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>496</StateNumber>
-      <TypeId>23</TypeId>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>614</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="36" name="created_at">
+    <column id="54" parent="40" name="email">
       <Position>5</Position>
-      <DataType>timestamp|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>496</StateNumber>
-      <TypeId>1114</TypeId>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>614</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <column id="51" parent="36" name="updated_at">
+    <column id="55" parent="40" name="password_digest">
       <Position>6</Position>
-      <DataType>timestamp|0s</DataType>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>614</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="56" parent="40" name="created_at">
+      <Position>7</Position>
+      <DataType>timestamp(6)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>496</StateNumber>
+      <StateNumber>614</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="52" parent="36" name="widgets_pkey">
-      <ObjectId>24603</ObjectId>
-      <StateNumber>496</StateNumber>
+    <column id="57" parent="40" name="updated_at">
+      <Position>8</Position>
+      <DataType>timestamp(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>614</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="58" parent="40" name="users_pkey">
+      <ObjectId>32957</ObjectId>
+      <StateNumber>614</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1132,12 +1160,12 @@ false Zulu
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="53" parent="36" name="widgets_pkey">
-      <ObjectId>24604</ObjectId>
-      <StateNumber>496</StateNumber>
+    <key id="59" parent="40" name="users_pkey">
+      <ObjectId>32958</ObjectId>
+      <StateNumber>614</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>widgets_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
