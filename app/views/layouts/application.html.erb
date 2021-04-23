@@ -12,7 +12,7 @@
   <!-- Favicons -->
   <link rel="shortcut icon" href="#">
   <!-- Page Title -->
-  <title>Listed</title>
+  <title>My SWE Local Listings</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Google Fonts -->
@@ -28,10 +28,14 @@
 </head>
 
 <body>
+
 <!--============================= HEADER =============================-->
-<%= render 'layouts/header' %>
+<%= render 'layouts/menu' %>
+<!--// Main menu Update to reflect Logged-In vs not -->
+<%= render 'layouts/login_register' %>
 <!--// Log In & Signup -->
 <!--//END HEADER -->
+
 <!--============================= HERO =============================-->
 <%= render 'layouts/hero' %>
 <!--//END HERO -->
