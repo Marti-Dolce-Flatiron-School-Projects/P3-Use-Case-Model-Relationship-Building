@@ -4,8 +4,9 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config.
+# Ignore configs.
 /.bundle
+/.git
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -18,7 +19,7 @@
 # Ignore ruby-version
 /.ruby-version
 /.idea/*
-/Gemfile.lock
+
 .idea/rails-user-onboarding-app.iml
 .idea/dataSources/635130c4-be99-42c9-bd41-5a63c8bafecb/storage_v2/_src_/database/rails-onboarding-app_development.l0oGxg/schema/public.abK9xQ.meta
 .idea/dataSources/635130c4-be99-42c9-bd41-5a63c8bafecb/storage_v2/_src_/database/rails-onboarding-app_development.l0oGxg/schema/pg_catalog.0S1ZNQ.meta

@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 ruby '>= 2.5', '< 3.1'
 
-gem 'faker'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use postgresql as the database for Active Record
@@ -30,7 +28,7 @@ gem 'sdoc',          group: :doc
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 gem 'puma'
 gem 'dotenv'
@@ -45,3 +43,4 @@ gem 'dotenv'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "faker", "~> 2.17"
