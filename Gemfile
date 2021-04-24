@@ -43,4 +43,9 @@ gem 'dotenv'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 gem "faker", "~> 2.17"
+
+
+gem 'omniauth-auth0', '~> 2.5'
+gem 'omniauth-rails_csrf_protection', '~> 0.1' # prevents forged authentication requests
