@@ -1,23 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>SWF Locations</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Surjith S M">
+  <meta name="description" content="#">
+  <meta name="keywords" content="#">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="#">
+  <!-- Page Title -->
+  <title>My SWE Local Listings</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <!-- Themify Icon -->
+  <link rel="stylesheet" href="css/style.scss">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Hover Effects -->
+  <link href="css/set1.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+<div class="wrapper">
+
 <!--============================= HEADER =============================-->
 <%= render 'layouts/menu' %>
 <!--// Main menu Update to reflect Logged-In vs not -->
-<div class="container">
-  <%= yield %>
+<%# = render 'layouts/login_register' %>
+<!--// Log In & Signup -->
+<!--//END HEADER -->
+
+<!--============================= HERO =============================-->
+<%# = render 'layouts/hero' %>
+<!--//END HERO -->
+<!--============================= POPULAR =============================-->
+<%# = render 'layouts/popular' %>
+<!--//END POPULAR -->
+
+<!--============================= FEATURED =============================-->
+<%# = render 'layouts/featured' %>
+<!--//END FEATURED -->
+
+<!--============================= DETAILS =============================-->
+<%# = render 'layouts/details' %>
+<!--//END DETAILS -->
+
+<!--============================= FAQ =============================-->
+<%# = render 'layouts/faq' %>
+<!--//END FAQ -->
+
+
+<!--============================= YIELD =============================-->
+<div class="container-fw">
+<%= yield %>
+<!--//END YIELD -->
 </div>
+
 <!--============================= FOOTER =============================-->
 <%= render 'layouts/footer' %>
 <!--//END FOOTER -->
+</div>
 </body>
 </html>

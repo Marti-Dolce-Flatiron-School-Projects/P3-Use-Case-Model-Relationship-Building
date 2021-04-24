@@ -12,8 +12,19 @@ Author:
 /* ==============================================================
    GLOBAL STYLES
    ============================================================== */
-body {
-  font-family: 'Roboto', sans-serif; }
+* {
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+html,body {
+  font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
 
 h1 {
   font-size: 60px; }
@@ -97,6 +108,8 @@ footer.main-block {
     -webkit-box-flex: 100%;
     -ms-flex: 100%;
     flex: 100%; } }
+
+
 
 /* ==============================================================
    NAV MENU
@@ -651,9 +664,11 @@ footer.main-block {
 /* ==============================================================
    FOOTER
    ============================================================== */
-footer {
+footer, push {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+    height: 155px; /* .push must be the same height as .footer */
+}
 
 @media (max-width: 992px) {
   .location {

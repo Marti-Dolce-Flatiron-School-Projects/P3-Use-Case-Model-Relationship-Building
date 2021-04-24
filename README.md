@@ -22,6 +22,7 @@ resources :users, only: [:new, :create]
   
 - get 'welcome', to: 'sessions#welcome'
 
+Add All Files: git add -A
 
 Updating heroku: git push heroku HEAD:main/master
 
