@@ -7,26 +7,31 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
-# Ignore ruby-version
-/.ruby-version
-/.idea/*
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
 
-/Gemfile.lock
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
 
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 /.idea/
-/test/
-.idea/rails-user-onboarding-app.iml
-config/database.yml
-Gemfile.lock
-Gemfile.lock
-Onboarding Workflow
-package.json
-
