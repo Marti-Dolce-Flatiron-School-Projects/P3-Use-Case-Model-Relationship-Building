@@ -4,6 +4,7 @@ CRM’s are products designed to track your relationship with clients. This proj
 ## Project Requirements
 [Read More](https://github.com/Marti-Dolce-Flatiron-School-Projects/P3-Use-Case-Model-Relationship-Building/issues/1)
 
+Testing adding Auth0.net heroku integration.
 ## Project Specifications
 Read More
 
