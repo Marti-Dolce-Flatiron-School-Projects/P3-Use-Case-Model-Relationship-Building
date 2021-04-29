@@ -10,6 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_04_29_220931) do
+
+  create_table "active_storage_attachments", id: false, force: :cascade do |t|
+    t.text "id"
+    t.text "name"
+    t.text "record_type"
+    t.text "record_id"
+    t.text "blob_id"
+    t.text "created_at"
+  end
+
+  create_table "active_storage_blobs", id: false, force: :cascade do |t|
+    t.text "id"
+    t.text "key"
+    t.text "filename"
+    t.text "content_type"
+    t.text "metadata"
+    t.text "byte_size"
+    t.text "checksum"
+    t.text "created_at"
+    t.string "service_name", null: false
+  end
 
 end
