@@ -9,37 +9,46 @@
   <meta name="author" content="Surjith S M">
   <meta name="description" content="#">
   <meta name="keywords" content="#">
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="#">
-  <!-- Page Title -->
-  <title>My SWE Local Listings</title>
+  <title>My SWF Local Listings</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <!-- Themify Icon -->
-  <link rel="stylesheet" href="css/style.scss">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- Hover Effects -->
-  <link href="css/set1.css" rel="stylesheet">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
 </head>
 
 <body>
 
 <!--============================= HEADER =============================-->
-<%= render 'layouts/menu'%>
+<%= render 'layouts/menu' %>
 <!--// Main menu Update to reflect Logged-In vs not -->
-<%= render 'layouts/login_register'  %>
+<%= render 'layouts/login_register' %>
 <!--// Log In & Signup -->
 <!--//END HEADER -->
 
+<!--============================= HERO =============================-->
+<%# = render 'layouts/hero' %>
+<!--//END HERO -->
+<!--============================= POPULAR =============================-->
+<%# = render 'layouts/popular' %>
+<!--//END POPULAR -->
+
+<!--============================= FEATURED =============================-->
+<%# = render 'layouts/featured' %>
+<!--//END FEATURED -->
+
+<!--============================= DETAILS =============================-->
+<%# = render 'layouts/details' %>
+<!--//END DETAILS -->
+
+<!--============================= FAQ =============================-->
+<%# = render 'layouts/faq' %>
+<!--//END FAQ -->
+
+
+<!--============================= YIELD =============================-->
 
 <%= yield %>
 <!--//END YIELD -->
-
 <!--============================= FOOTER =============================-->
 <%= render 'layouts/footer' %>
 <!--//END FOOTER -->
