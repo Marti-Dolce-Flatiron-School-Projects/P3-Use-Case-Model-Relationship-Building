@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   # <!--============================= WELCOME =============================-->
   # Default Home page
 
-  root 'welcome#index'
+  root 'application#hello'
 
 end
