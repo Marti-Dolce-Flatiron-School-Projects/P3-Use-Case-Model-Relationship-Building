@@ -3,56 +3,32 @@
 
 <head>
   <!-- Required meta tags -->
+  <title><%= full_title(yield(:title)) %></title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Surjith S M">
-  <meta name="description" content="#">
-  <meta name="keywords" content="#">
-  <title><% yield(:title) %>.: HOA Listings Manager :.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
   <!-- Bootstrap CSS -->
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+
 </head>
 
 <body>
-
 <!--============================= HEADER =============================-->
 <%= render 'layouts/menu' %>
 <!--// Main menu Update to reflect Logged-In vs not -->
 <%= render 'layouts/login_register' %>
 <!--// Log In & Signup -->
 <!--//END HEADER -->
-
-<!--============================= HERO =============================-->
-<%# = render 'layouts/hero' %>
-<!--//END HERO -->
-<!--============================= POPULAR =============================-->
-<%# = render 'layouts/popular' %>
-<!--//END POPULAR -->
-
-<!--============================= FEATURED =============================-->
-<%# = render 'layouts/featured' %>
-<!--//END FEATURED -->
-
-<!--============================= DETAILS =============================-->
-<%# = render 'layouts/details' %>
-<!--//END DETAILS -->
-
-<!--============================= FAQ =============================-->
-<%# = render 'layouts/faq' %>
-<!--//END FAQ -->
-
-
 <!--============================= YIELD =============================-->
-
 <%= yield %>
 
 <!--//END YIELD -->
-<!--============================= FOOTER =============================-->
-<%= render 'layouts/footer' %>
-<!--//END FOOTER -->
+  <!--============================= FOOTER =============================-->
+  <%= render 'layouts/footer' %>
+  <!--//END FOOTER -->
+
 
 </body>
 </html>
