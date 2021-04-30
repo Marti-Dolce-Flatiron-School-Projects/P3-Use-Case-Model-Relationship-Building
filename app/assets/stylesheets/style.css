@@ -1,3 +1,5 @@
+@import "_bootstrap-sprockets.scss";
+@import "bootstrap";
 /*------------------------------------------------------------------
 Theme Name: Listing - Responsive Bootstrap Landing Page
 Version: 1.0
@@ -12,6 +14,7 @@ Author:
 /* ==============================================================
    GLOBAL STYLES
    ============================================================== */
+
 body {
     font-family: 'Roboto', sans-serif; }
 
