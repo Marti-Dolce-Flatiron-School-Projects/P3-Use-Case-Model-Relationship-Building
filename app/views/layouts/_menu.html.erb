@@ -1,4 +1,3 @@
-<!--============================= MENU =============================-->
 <div class="nav-menu sticky-top">
   <div class="bg transition">
     <div class="container-fluid fixed">
@@ -11,33 +10,20 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul class="navbar-nav">
-                <%# = link_to "Signup", user_new_url%>
-
-
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pages
-                    <span class="ti-angle-down"></span>
+                  <a>
+                    <%= link_to "Home", root_path, class: "nav-link", data_toggle: "dropdown", aria_haspopup: "true", aria_expanded: "false" %>
+
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="index-two.html">Home Style Two</a>
-                    <a class="dropdown-item" href="listing.html">Listing</a>
-                    <a class="dropdown-item" href="detail.html">Listing Detail</a>
-                    <a class="dropdown-item" href="add-listing.html">Add new Listing</a>
-                    <a class="dropdown-item" href="payment-method.html">Payment Method</a>
-                    <a class="dropdown-item" href="thank-you.html">Thank You</a>
-                    <a class="dropdown-item" href="contact.html">Contact</a>
-                    <a class="dropdown-item" href="pricing.html">Pricing</a>
-                    <a class="dropdown-item" href="404.html">404</a>
+                    <%= link_to "About", about_path, class: "dropdown-item" %>
+                    <%= link_to "Help", help_path, class: "dropdown-item" %>
                   </div>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Help</a>
-                </li>
+
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Blog
-                    <span class="ti-angle-down"></span>
                   </a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="blog.html">Blog Listing</a>
@@ -48,7 +34,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="login.html" data-toggle="modal" data-target="#exampleModal">Login</a>
                 </li>
-                <li><a href="add-listing.html" class="btn btn-outline-danger top-btn"><span class="ti-plus"></span> Add Listing</a></li>
+                <li>
+                  <%= link_to "Add Listing", signup_path, class: "btn btn-outline-danger top-btn" %>
+</li>
               </ul>
             </div>
           </nav>
@@ -57,4 +45,3 @@
     </div>
   </div>
 </div>
-<!--//END MENU -->
