@@ -1,0 +1,55 @@
+<% provide(:title, "Signup") %>
+<!--============================= TITLE =============================-->
+<section class="reserve-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <p><span>Create a new account.</span></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!--//END TITLE -->
+<!--============================= CONTENT =============================-->
+<div class="row no-gutters justify-content-center">
+
+  <div class="col-md-10 gray">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="contact-form pl-4 py-4">
+
+          <%= form_with(model: @user, local: true) do |f| %>
+            <%#= render 'shared/error_messages', object: f.object %>
+
+
+            <div class="form-group">
+              <%= f.label :fname %>
+              <%= f.text_field :fname, class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :lname %>
+              <%= f.text_field :lname, class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, class: 'form-control' %>
+            </div>
+
+            <div class="form-group">
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'form-control' %>
+            </div>
+
+            <%= f.submit "Create my account", class: "btn btn-primary" %>
+
+            <div id="js-contact-result" data-success-msg="Success, We will get back to you soon" data-error-msg="Oops! Something went wrong"></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--//END CONTENT -->
