@@ -1,51 +1,42 @@
 <% provide(:title, 'Sign up') %>
-<section class="subpage-bg">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="titile-block title-block_subpage">
-          <h2>Sign Up</h2>
-        </div>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="titile-block title-block_subpage">
+        <h2>signup</h2>
       </div>
     </div>
   </div>
-</section>
-<!--// SUBPAGE HEADER BG -->
-<!--============================= CONTACT =============================-->
-<div class="row justify-content-center" style="margin-top:60px; width: auto;">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 responsive-wrap">
     <%= form_with(model: @user, local: true) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
-      <div class="form-group">
-        <%= f.text_field :fname, class: 'form-control add-listing_form', id: "name",  placeholder: "Your name"%>
 
-      </div>
+    <div class="form-group">
+      <%= f.label :fname %>
+      <%= f.text_field :fname, class: 'form-control' %>
+    </div>
 
-      <div class="form-group">
-        <%= f.text_field :lname, class: 'form-control add-listing_form', id: "name",  placeholder: "Your name"%>
+    <div class="form-group">
+      <%= f.label :lname %>
+      <%= f.text_field :lname, class: 'form-control' %>
+    </div>
 
-      </div>
-      <div class="form-group">
-        <%= f.email_field :email, class: 'form-control add-listing_form', id: "email",  placeholder: "Email" %>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+    </div>
 
-      </div>
-      <div class="form-group">
-        <%= f.password_field :password, class: 'form-control add-listing_form', id: "password",  placeholder: "Password" %>
+    <div class="form-group">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
 
-      </div>
-      <div class="form-group">
-        <%= f.password_field :password_confirmation, class: 'form-control add-listing_form', id: "password_confirmation",  placeholder: "Confirm Password" %>
-      </div>
+    <div class="form-group">
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
 
-      </div>
-      <div class="modal-footer justify-content-center">
-        <%= f.submit "Create my account", class: "btn btn-primary" %>
-
-      </div>
-    <% end %>
+    <div class="form-group">
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    </div>
+  <% end %>
   </div>
- </div>
-</div>
