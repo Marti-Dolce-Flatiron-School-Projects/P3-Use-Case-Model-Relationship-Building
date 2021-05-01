@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @listing.address %>
+</p>
+
+<p>
+  <strong>Community:</strong>
+  <%= @listing.community %>
+</p>
+
+<p>
+  <strong>First listed:</strong>
+  <%= @listing.first_listed %>
+</p>
+
+<p>
+  <strong>Bedrooms:</strong>
+  <%= @listing.bedrooms %>
+</p>
+
+<p>
+  <strong>Bathrooms:</strong>
+  <%= @listing.bathrooms %>
+</p>
+
+<p>
+  <strong>Sqft:</strong>
+  <%= @listing.SQFT %>
+</p>
+
+<p>
+  <strong>Asking price:</strong>
+  <%= @listing.asking_price %>
+</p>
+
+<p>
+  <strong>Photo 1:</strong>
+  <%= @listing.photo_1 %>
+</p>
+
+<p>
+  <strong>Photo 2:</strong>
+  <%= @listing.photo_2 %>
+</p>
+
+<p>
+  <strong>Photo 3:</strong>
+  <%= @listing.photo_3 %>
+</p>
+
+<p>
+  <strong>Photo 4:</strong>
+  <%= @listing.photo_4 %>
+</p>
+
+
+<p>
+  <strong>Description</strong>
+  <%= @listing.description %>
+</p>
+
+
+<p>
+  <strong>Hoas:</strong>
+  <%= @listing.hoa_id %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

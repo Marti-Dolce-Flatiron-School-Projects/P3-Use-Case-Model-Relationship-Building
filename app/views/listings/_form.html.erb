@@ -1,0 +1,82 @@
+<%= form_with(model: listing) do |form| %>
+  <% if listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+        <% listing.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :community %>
+    <%= form.text_field :community %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_listed %>
+    <%= form.date_select :first_listed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bedrooms %>
+    <%= form.text_field :bedrooms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bathrooms %>
+    <%= form.text_field :bathrooms %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SQFT %>
+    <%= form.text_field :SQFT %>
+  </div>
+
+  <div class="field">
+    <%= form.label :asking_price %>
+    <%= form.text_field :asking_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_1 %>
+    <%= form.text_field :photo_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_2 %>
+    <%= form.text_field :photo_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_3 %>
+    <%= form.text_field :photo_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_4 %>
+    <%= form.text_field :photo_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, :cols => 30, :rows => 5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hoa_id %>
+    <%= form.number_field :hoa_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

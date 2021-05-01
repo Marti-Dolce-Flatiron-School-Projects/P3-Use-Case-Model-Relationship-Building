@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Community</th>
+      <th>First listed</th>
+      <th>Bedrooms</th>
+      <th>Bathrooms</th>
+      <th>Sqft</th>
+      <th>Asking price</th>
+      <th>Photo 1</th>
+      <th>Photo 2</th>
+      <th>Photo 3</th>
+      <th>Photo 4</th>
+      <th>Description</th>
+      <th>Hoas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @listings.each do |listing| %>
+      <tr>
+        <td><%= listing.address %></td>
+        <td><%= listing.community %></td>
+        <td><%= listing.first_listed %></td>
+        <td><%= listing.bedrooms %></td>
+        <td><%= listing.bathrooms %></td>
+        <td><%= listing.SQFT %></td>
+        <td><%= listing.asking_price %></td>
+        <td><%= listing.photo_1 %></td>
+        <td><%= listing.photo_2 %></td>
+        <td><%= listing.photo_3 %></td>
+        <td><%= listing.photo_4 %></td>
+        <td><%= listing.description %></td>
+        <td><%= listing.hoa_id %></td>
+        <td><%= link_to 'Show', listing %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Listing', new_listing_path %>

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hoas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contact</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Community</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Website</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hoas.each do |hoa| %>
+      <tr>
+        <td><%= hoa.contact %></td>
+        <td><%= hoa.phone %></td>
+        <td><%= hoa.email %></td>
+        <td><%= hoa.community %></td>
+        <td><%= hoa.address %></td>
+        <td><%= hoa.city %></td>
+        <td><%= hoa.state %></td>
+        <td><%= hoa.zipcode %></td>
+        <td><%= hoa.website %></td>
+        <td><%= link_to 'Show', hoa %></td>
+        <td><%= link_to 'Edit', edit_hoa_path(hoa) %></td>
+        <td><%= link_to 'Destroy', hoa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hoa', new_hoa_path %>
