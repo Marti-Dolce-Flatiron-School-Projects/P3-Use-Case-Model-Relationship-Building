@@ -52,18 +52,15 @@
             <%= form_with(model: @user, local: true) do |f| %>
               <%= render 'shared/error_messages', object: f.object %>
               <div class="form-group">
-                <input type="text" class="form-control add-listing_form" >
                 <%= f.text_field :fname, class: 'form-control add-listing_form', id: "name",  placeholder: "Your name"%>
 
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control add-listing_form" >
                 <%= f.text_field :lname, class: 'form-control add-listing_form', id: "name",  placeholder: "Your name"%>
 
               </div>
               <div class="form-group">
-                <input type="text" class="form-control add-listing_form" id="email" placeholder="Email">
                 <%= f.email_field :email, class: 'form-control add-listing_form', id: "email",  placeholder: "Email" %>
 
               </div>
