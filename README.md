@@ -1,24 +1,11 @@
-# README
+# P3-Use-Case-Model-Relationship-Building
+CRM’s are products designed to track your relationship with clients. This project explores those methods programmatically using a Ruby on Rails application.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Requirements
+[Read More](https://github.com/Marti-Dolce-Flatiron-School-Projects/P3-Use-Case-Model-Relationship-Building/issues/1)
 
-Things you may want to cover:
+## Project Specifications
+Read More
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Documentation
+Read More

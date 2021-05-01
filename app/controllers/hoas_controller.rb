@@ -46,7 +46,7 @@ class HoasController < ApplicationController
   def destroy
     @hoa.destroy
     respond_to do |format|
-      format.html { redirect_to hoas_url, notice: 'Hoa was successfully destroyed.' }
+      format.html { redirect_to hoa_url, notice: 'Hoa was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
