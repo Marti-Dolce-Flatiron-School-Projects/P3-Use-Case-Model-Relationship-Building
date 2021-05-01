@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_01_045224) do
+ActiveRecord::Schema.define(version: 2021_05_01_084900) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -40,38 +40,23 @@ ActiveRecord::Schema.define(version: 2021_05_01_045224) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "hoas", force: :cascade do |t|
-    t.string "contact"
-    t.string "phone"
-    t.string "email"
-    t.string "community"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.string "zipcode"
-    t.string "website"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "listings", force: :cascade do |t|
-    t.string "address"
-    t.string "community"
-    t.date "first_listed"
-    t.string "bedrooms"
-    t.string "bathrooms"
-    t.string "SQFT"
-    t.decimal "asking_price"
-    t.string "photo_1"
-    t.string "photo_2"
-    t.string "photo_3"
-    t.string "photo_4"
-    t.integer "hoa_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.text "description"
+  create_table "hoas", id: { limit: 64 }, force: :cascade do |t|
+    t.text "contact"
+    t.text "phone"
+    t.text "email"
+    t.text "community"
+    t.text "address"
+    t.text "city"
+    t.text "state"
+    t.text "zipcode"
+    t.text "website"
+    t.text "created_at", limit: 6, null: false
+    t.text "updated_at", limit: 6, null: false
     t.integer "user_id"
   end
+
+# Could not dump table "listings" because of following StandardError
+#   Unknown type 'real' for column 'asking_price'
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
